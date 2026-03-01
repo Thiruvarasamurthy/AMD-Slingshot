@@ -1,0 +1,35 @@
+# Node
+node_modules/
+dist/
+dist-electron/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Environment
+.env
+
+# Database & Local State
+backend/chroma_db/
+backend/lemonadeflow.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vite cache
+.vite/
+.vite-electron-renderer/

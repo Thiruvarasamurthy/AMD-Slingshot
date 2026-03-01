@@ -1,0 +1,14 @@
+{
+  "name": "lemonade-flow-root",
+  "version": "1.0.0",
+  "description": "Root runner for LemonadeFlow - AMD Slingshot Hackathon",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && uvicorn main:app --port 8001 --reload",
+    "start:frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

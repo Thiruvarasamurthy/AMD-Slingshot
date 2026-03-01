@@ -1,0 +1,27 @@
+lemonade-flow/
+├── .env.example
+├── README.md
+├── start.sh
+├── start.bat
+├── package.json               # Root workspace/runner
+├── frontend/                  # React + Electron + Vite
+│   ├── package.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── index.html
+│   ├── electron/
+│   │   ├── main.ts            # Electron main process
+│   │   └── preload.ts
+│   └── src/                   # React source
+│       ├── App.tsx
+│       ├── main.tsx
+│       ├── components/        # Custom ReactFlow Nodes & UI
+│       └── theme/             # AMD Dark Theme constants
+└── backend/                   # FastAPI Orchestrator
+    ├── pyproject.toml
+    ├── requirements.txt
+    ├── main.py                # Server entry & /health
+    ├── executor.py            # Pipeline engine
+    ├── database.py            # SQLite setup
+    └── nodes/                 # AI Node implementations
